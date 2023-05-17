@@ -32,20 +32,21 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<armDeployment>
+					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<target>${target}</target>
-						<targetType>${targetType}</targetType>
 						<server>${server}</server>
-						<environment>${env}</environment>
 						<muleVersion>${version}</muleVersion>
+						<environment>${env}</environment>
+						<applicationName>${appName}</applicationName>
+						<workerType>${workerType}</workerType>
+						<workers>${worker}</workers>
+						<objectStoreV2>true</objectStoreV2>
 						<properties>
+							<psfdc.port>${http}</psfdc.port>
+							<pdb.port>${htt}</pdb.port>
 							<env>${env}</env>
-							<pdb.port>${http}</pdb.port>
-							<psfdc.port>${htt}</psfdc.port>
-							<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
 						</properties>
-					</armDeployment>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>

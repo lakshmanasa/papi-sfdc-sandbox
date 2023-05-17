@@ -7,7 +7,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/json-logger http://www.mulesoft.org/schema/mule/json-logger/current/mule-json-logger.xsd">
 	<flow name="post-db-account-papiFlow" doc:id="106cbe28-89d7-4cbf-8925-b8092bb2db62" >
-		<logger level="INFO" doc:name="Logger" doc:id="1c93a8a1-e95f-4256-a228-0f9d30d0edd5" message="Before starting  DB-PAPI, the payload is this::::::: #[payload]"/>
+		<logger level="INFO" doc:name="Loggers" doc:id="1c93a8a1-e95f-4256-a228-0f9d30d0edd5" message="Before starting  DB-PAPI, the payload is this::::::: #[payload]"/>
 		<ee:transform doc:name="fetching only Internal ID by using flatten function" doc:id="dd17b749-e97b-4dd9-8cec-5a9d168f7a3f" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
