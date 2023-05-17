@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/json-logger http://www.mulesoft.org/schema/mule/json-logger/current/mule-json-logger.xsd">
 
 	<flow name="sfdc-account-papi" doc:id="b7ffc02b-d04b-4f75-83bc-39cc3e431abd" >
-		<logger level="INFO" doc:name="Logger" doc:id="8cb27ecc-deba-4c9f-bd7b-9fa57c85dc8d" message="After entered into Process API, the payload is this:::::: #[payload]"/>
+		<logger level="INFO" doc:name="Loggers" doc:id="8cb27ecc-deba-4c9f-bd7b-9fa57c85dc8d" message="After entered into Process API, the payload is this:::::: #[payload]"/>
 		<ee:transform doc:name="mapping to sfdc object" doc:id="284e6449-bf5a-4720-aa3c-d9ca4cefe285" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
